@@ -1,0 +1,76 @@
+{
+  "categories": [
+    { "slug": "business-cards", "name": "Business Cards", "description": "Premium cards for everyday networking." },
+    { "slug": "posters", "name": "Posters", "description": "High-impact prints for walls, events, and promotions." },
+    { "slug": "t-shirts", "name": "T-Shirts", "description": "Custom apparel for teams, brands, and creators." },
+    { "slug": "mugs", "name": "Mugs", "description": "Personalized ceramic mugs with wraparound artwork." }
+  ],
+  "products": [
+    {
+      "id": "business-card-standard",
+      "categorySlug": "business-cards",
+      "slug": "standard-business-card",
+      "name": "Standard Business Card",
+      "description": "3.5 x 2 inch full-color business card with bleed guides.",
+      "basePriceCents": 1800,
+      "previewImageUrl": "/images/products/business-card.svg",
+      "printWidthIn": 3.5,
+      "printHeightIn": 2,
+      "bleedIn": 0.125,
+      "variants": [
+        { "name": "Matte", "optionType": "finish", "optionValue": "matte", "priceDeltaCents": 0 },
+        { "name": "Gloss", "optionType": "finish", "optionValue": "gloss", "priceDeltaCents": 300 },
+        { "name": "Premium 16pt", "optionType": "material", "optionValue": "16pt", "priceDeltaCents": 500 }
+      ]
+    },
+    {
+      "id": "poster-18x24",
+      "categorySlug": "posters",
+      "slug": "poster-18x24",
+      "name": "Poster 18 x 24",
+      "description": "Sharp large-format poster print for campaigns and decor.",
+      "basePriceCents": 2400,
+      "previewImageUrl": "/images/products/poster.svg",
+      "printWidthIn": 18,
+      "printHeightIn": 24,
+      "bleedIn": 0.125,
+      "variants": [
+        { "name": "Satin", "optionType": "finish", "optionValue": "satin", "priceDeltaCents": 0 },
+        { "name": "Matte", "optionType": "finish", "optionValue": "matte", "priceDeltaCents": 200 }
+      ]
+    },
+    {
+      "id": "tee-classic",
+      "categorySlug": "t-shirts",
+      "slug": "classic-t-shirt",
+      "name": "Classic T-Shirt",
+      "description": "Soft cotton tee with front print area.",
+      "basePriceCents": 2200,
+      "previewImageUrl": "/images/products/t-shirt.svg",
+      "printWidthIn": 12,
+      "printHeightIn": 14,
+      "bleedIn": 0,
+      "variants": [
+        { "name": "Small", "optionType": "size", "optionValue": "S", "priceDeltaCents": 0 },
+        { "name": "Medium", "optionType": "size", "optionValue": "M", "priceDeltaCents": 0 },
+        { "name": "Large", "optionType": "size", "optionValue": "L", "priceDeltaCents": 100 }
+      ]
+    },
+    {
+      "id": "mug-11oz",
+      "categorySlug": "mugs",
+      "slug": "ceramic-mug-11oz",
+      "name": "Ceramic Mug 11oz",
+      "description": "Dishwasher-safe mug with full-color wrap print.",
+      "basePriceCents": 1600,
+      "previewImageUrl": "/images/products/mug.svg",
+      "printWidthIn": 8.5,
+      "printHeightIn": 3.5,
+      "bleedIn": 0.0625,
+      "variants": [
+        { "name": "White", "optionType": "color", "optionValue": "white", "priceDeltaCents": 0 },
+        { "name": "Black Rim", "optionType": "color", "optionValue": "black-rim", "priceDeltaCents": 250 }
+      ]
+    }
+  ]
+}

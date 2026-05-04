@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 280" role="img" aria-label="Mug">
+  <path d="M72 72h138v120c0 30-24 54-54 54h-30c-30 0-54-24-54-54V72Z" fill="#f7f8f3" stroke="#17211f" stroke-opacity=".16" stroke-width="6"/>
+  <path d="M210 105h24c29 0 52 23 52 52s-23 52-52 52h-24v-34h22c10 0 18-8 18-18s-8-18-18-18h-22v-34Z" fill="#fff" stroke="#17211f" stroke-opacity=".16" stroke-width="6"/>
+  <rect x="98" y="116" width="84" height="58" rx="10" fill="#d1495b"/>
+  <rect x="114" y="135" width="52" height="8" rx="4" fill="#fff"/>
+</svg>

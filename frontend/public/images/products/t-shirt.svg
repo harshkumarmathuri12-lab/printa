@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="T-shirt">
+  <path d="M105 46 66 74 36 132l49 27 18-29v144h114V130l18 29 49-27-30-58-39-28-34 24h-42l-34-24Z" fill="#f7f8f3" stroke="#17211f" stroke-opacity=".16" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="116" y="135" width="88" height="70" rx="10" fill="#1f6f68"/>
+  <rect x="132" y="154" width="58" height="10" rx="5" fill="#fff"/>
+  <rect x="132" y="174" width="42" height="8" rx="4" fill="#fff" opacity=".7"/>
+</svg>

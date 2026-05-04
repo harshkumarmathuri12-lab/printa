@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="Business card">
+  <rect width="320" height="220" rx="18" fill="#f7f8f3"/>
+  <rect x="28" y="34" width="94" height="152" rx="10" fill="#1f6f68"/>
+  <rect x="150" y="55" width="112" height="16" rx="8" fill="#17211f"/>
+  <rect x="150" y="84" width="80" height="10" rx="5" fill="#d1495b"/>
+  <rect x="150" y="145" width="118" height="9" rx="4.5" fill="#70817d"/>
+  <rect x="150" y="164" width="88" height="9" rx="4.5" fill="#70817d"/>
+</svg>
