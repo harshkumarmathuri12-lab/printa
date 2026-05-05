@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Layout } from '../components/Layout';
-import { ProductCard } from '../components/ProductCard';
 import { getCatalogFallback } from '../lib/api';
 
 export default function Home() {
@@ -48,16 +47,25 @@ export default function Home() {
       </section>
 
       <section id="products" className="mx-auto max-w-[1200px] px-6 py-12">
-        {categories.map((category) => (
-          <div className="mt-12 first:mt-0" key={category.id}>
-            <h2 className="mb-6 text-2xl font-bold leading-tight">{category.name}</h2>
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-6">
-              {category.products.map((product) => (
-                <ProductCard product={product} key={product.id} />
-              ))}
-            </div>
-          </div>
-        ))}
+        <h2 className="mb-8 text-3xl font-bold leading-tight text-black">Explore all categories</h2>
+        <div className="grid grid-cols-2 gap-x-8 gap-y-9 md:grid-cols-4">
+          {categories.map((category) => {
+            const product = category.products[0];
+
+            return (
+              <a className="group block" href={product ? `/products/${product.id}` : '#'} key={category.id}>
+                <div className="flex aspect-square items-center justify-center overflow-hidden rounded-[18px] border border-gray-300 bg-white p-5 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg">
+                  <div className="flex h-full w-full items-center justify-center rounded-full bg-gray-100 p-5">
+                    {product ? (
+                      <img className="h-full max-h-36 w-full object-contain transition-transform duration-300 group-hover:scale-105" src={product.previewImageUrl} alt="" />
+                    ) : null}
+                  </div>
+                </div>
+                <h3 className="mt-4 text-left text-lg font-bold leading-7 text-black">{category.name}</h3>
+              </a>
+            );
+          })}
+        </div>
       </section>
     </Layout>
   );
