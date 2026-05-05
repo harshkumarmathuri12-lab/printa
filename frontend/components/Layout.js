@@ -12,7 +12,7 @@ export function Layout({ children }) {
       <header className="sticky top-0 z-30 border-b border-black/10 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
           <Link href="/" className="text-xl font-black tracking-normal text-ink">
-            printa
+            Printa
           </Link>
           <nav className="flex items-center gap-2 text-sm font-semibold">
             <Link className="rounded-md px-3 py-2 hover:bg-black/5" href="/">

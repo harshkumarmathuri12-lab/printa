@@ -13,12 +13,12 @@ app.use(cors({ origin: process.env.FRONTEND_URL || 'http://localhost:3000', cred
 app.use(express.json({ limit: '20mb' }));
 
 app.get('/health', (_req, res) => {
-  res.json({ ok: true, service: 'printa-backend' });
+  res.json({ ok: true, service: 'Printa-backend' });
 });
 
 app.use('/api', router);
 app.use(errorHandler);
 
 app.listen(port, () => {
-  console.log(`printa API listening on http://localhost:${port}`);
+  console.log(`Printa API listening on http://localhost:${port}`);
 });
