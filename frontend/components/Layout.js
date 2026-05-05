@@ -8,7 +8,7 @@ export function Layout({ children }) {
   const { currency, setCurrency } = useCurrency();
 
   return (
-    <div className="min-h-screen bg-[#fbfbf8]">
+    <div className="min-h-screen bg-[#f9fafb]">
       <header className="sticky top-0 z-30 border-b border-black/10 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
           <Link href="/" className="text-xl font-black tracking-normal text-ink">
