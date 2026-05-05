@@ -7,11 +7,11 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const token = window.localStorage.getItem('vistaclone_token');
+    const token = window.localStorage.getItem('printa_token');
     if (token) {
       api('/auth/me')
         .then((data) => setUser(data.user))
-        .catch(() => window.localStorage.removeItem('vistaclone_token'));
+        .catch(() => window.localStorage.removeItem('printa_token'));
     }
   }, []);
 
@@ -20,16 +20,16 @@ export function AuthProvider({ children }) {
       user,
       async login(email, password) {
         const data = await api('/auth/login', { method: 'POST', body: JSON.stringify({ email, password }) });
-        window.localStorage.setItem('vistaclone_token', data.token);
+        window.localStorage.setItem('printa_token', data.token);
         setUser(data.user);
       },
       async signup(name, email, password) {
         const data = await api('/auth/signup', { method: 'POST', body: JSON.stringify({ name, email, password }) });
-        window.localStorage.setItem('vistaclone_token', data.token);
+        window.localStorage.setItem('printa_token', data.token);
         setUser(data.user);
       },
       logout() {
-        window.localStorage.removeItem('vistaclone_token');
+        window.localStorage.removeItem('printa_token');
         setUser(null);
       }
     }),

@@ -6,12 +6,12 @@ export function CartProvider({ children }) {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const stored = window.localStorage.getItem('vistaclone_cart');
+    const stored = window.localStorage.getItem('printa_cart');
     if (stored) setItems(JSON.parse(stored));
   }, []);
 
   useEffect(() => {
-    window.localStorage.setItem('vistaclone_cart', JSON.stringify(items));
+    window.localStorage.setItem('printa_cart', JSON.stringify(items));
   }, [items]);
 
   const value = useMemo(

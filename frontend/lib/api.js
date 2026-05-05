@@ -1,7 +1,7 @@
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4000/api';
 
 export async function api(path, options = {}) {
-  const token = typeof window !== 'undefined' ? window.localStorage.getItem('vistaclone_token') : null;
+  const token = typeof window !== 'undefined' ? window.localStorage.getItem('printa_token') : null;
   const response = await fetch(`${API_URL}${path}`, {
     ...options,
     headers: {

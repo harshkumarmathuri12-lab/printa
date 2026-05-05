@@ -9,7 +9,7 @@ const sampleTemplates = JSON.parse(readFileSync(resolve(currentDir, '../../seed/
 export const users = [
   {
     id: 'admin-demo',
-    email: 'admin@vistaclone.dev',
+    email: 'admin@printa.dev',
     passwordHash: '$2a$10$YBzUlQ9G7oCexvW8Y66IlO9MS.ficB2vNlKpBW8W67I2ccyTVeR3W',
     name: 'Admin',
     role: 'admin'
