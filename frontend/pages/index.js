@@ -12,6 +12,7 @@ export default function Home() {
 
   return (
     <Layout>
+      <h1 style={{ color: 'red' }}>DEPLOY TEST SUCCESS</h1>
       <section className="bg-white">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 md:grid-cols-[1fr_420px] md:items-center lg:py-16">
           <div>
