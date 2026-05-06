@@ -1,6 +1,6 @@
 # Printa Print Platform
 
-A scalable custom product printing platform inspired by Vistaprint. The app is organized as a monorepo with a Next.js frontend, Express backend, PostgreSQL schema, S3-ready asset storage hooks, Stripe checkout hooks, and a Fabric.js product customization editor.
+A scalable custom product printing platform. The app is organized as a monorepo with a Next.js frontend, Express backend, PostgreSQL schema, S3-ready asset storage hooks, Stripe checkout hooks, and a Fabric.js product customization editor.
 
 ## Architecture
 
