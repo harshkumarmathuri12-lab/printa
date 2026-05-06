@@ -2,13 +2,14 @@ import Link from 'next/link';
 import { ShoppingCart, UserRound } from 'lucide-react';
 import { useCart } from '../lib/cart';
 import { useCurrency } from '../lib/currency';
+import Footer from './Footer';
 
 export function Layout({ children }) {
   const { items } = useCart();
   const { currency, setCurrency } = useCurrency();
 
   return (
-    <div className="min-h-screen bg-[#f9fafb]">
+    <div className="flex min-h-screen flex-col bg-[#f9fafb]">
       <header className="sticky top-0 z-30 border-b border-black/10 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
           <Link href="/" className="text-xl font-black tracking-normal text-ink">
@@ -37,7 +38,8 @@ export function Layout({ children }) {
           </nav>
         </div>
       </header>
-      <main>{children}</main>
+      <main className="flex-1">{children}</main>
+      <Footer />
     </div>
   );
 }
